@@ -1,0 +1,2 @@
+apb1.in apb1.out
+apb2.in apb2.out
