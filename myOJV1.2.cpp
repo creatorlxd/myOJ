@@ -104,7 +104,6 @@ void test(string exe)
 	string exeout=exe+".out_file";
 	for(int i=0;i<(int)sys.size();i++)
 	{
-		cout<<i<<": ";
 		double time_limit=sys[i].t_limit;
 		ifstream infile(sys[i].in.c_str());
 		string str_in;
@@ -120,6 +119,7 @@ void test(string exe)
 		str_out.clear();
 		outfile.close();
 		TimeTest tt;
+		cout<<i<<": ";
 		tt.Begin();
 		system(exe.c_str());
 		tt.End();
