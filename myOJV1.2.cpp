@@ -101,7 +101,7 @@ void load_set(string name)
 void test(string exe)
 {
 	string exein=exe+".in_file";
-	string exeout=exe+".out_file";
+	string exeout=exe+".out";
 	for(int i=0;i<(int)sys.size();i++)
 	{
 		double time_limit=sys[i].t_limit;
