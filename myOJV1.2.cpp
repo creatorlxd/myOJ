@@ -100,10 +100,11 @@ void load_set(string name)
 }
 void test(string exe)
 {
-	string exein=exe+".in";
-	string exeout=exe+".out";
+	string exein=exe+".in_file";
+	string exeout=exe+".out_file";
 	for(int i=0;i<(int)sys.size();i++)
 	{
+		cout<<i<<": ";
 		double time_limit=sys[i].t_limit;
 		ifstream infile(sys[i].in.c_str());
 		string str_in;
