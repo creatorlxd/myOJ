@@ -18,7 +18,7 @@ int main()
 	cin>>time_limit>>n>>filename>>in_back_name>>out_back_name;
 	fstream out(out_filenme.c_str(),ios::out);
 	out<<time_limit<<endl;
-	for(int i=0;i<=n;i++)
+	for(int i=1;i<=n;i++)
 		out<<filename+to_string(i)+in_back_name<<" "<<filename+to_string(i)+out_back_name<<endl;
 	out.close();
 	return 0;
